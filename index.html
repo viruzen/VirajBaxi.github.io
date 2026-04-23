@@ -1,152 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viraj Baxi | Game Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraj Baxi | Game Developer</title>
 
-<style>
-:root {
-  --bg:#020617;
-  --card:#020617;
-  --border:#1e293b;
-  --text:#e5e7eb;
-  --muted:#94a3b8;
-  --accent:#a78bfa; /* change color here */
-}
+    <style>
+        :root {
+            --bg: #020617;
+            --card: #020617;
+            --border: #1e293b;
+            --text: #e5e7eb;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+        }
 
-body { margin:0; font-family: 'Segoe UI', sans-serif; background:var(--bg); color:var(--text); }
-header { padding:80px 20px; text-align:center; background:linear-gradient(180deg,#020617,#0f172a); }
-h1 { font-size:3rem; margin:0; }
-p { color:var(--muted); line-height:1.6; }
-section { max-width:1000px; margin:auto; padding:60px 20px; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
 
-.btn { display:inline-block; margin-top:20px; padding:12px 18px; background:var(--accent); color:#020617; border-radius:10px; font-weight:bold; transition:0.3s; }
-.btn:hover { transform:scale(1.05); opacity:0.9; }
+        header {
+            padding: 90px 20px;
+            text-align: center;
+            background: linear-gradient(180deg,#020617,#0f172a);
+        }
 
-.project {
-  background:var(--card);
-  border:1px solid var(--border);
-  padding:20px;
-  border-radius:14px;
-  margin-bottom:30px;
-  transition:0.3s;
-}
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
 
-.project:hover {
-  transform:translateY(-6px) scale(1.01);
-  border-color:var(--accent);
-}
+        p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
 
-.project img, video {
-  width:100%;
-  border-radius:10px;
-  margin-bottom:15px;
-}
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
 
-.grid {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:20px;
-}
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            background: var(--accent);
+            color: #020617;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.25s;
+        }
 
-@media(min-width:768px){
-  .grid { grid-template-columns:1fr 1fr; }
-}
+            .btn:hover {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
 
-.links a { margin-right:15px; color:var(--accent); }
+        .project {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 14px;
+            transition: 0.3s;
+        }
 
-footer { text-align:center; padding:30px; color:#64748b; }
-</style>
+            .project:hover {
+                transform: translateY(-8px);
+                border-color: var(--accent);
+            }
+
+            .project img, video {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 12px;
+            }
+
+        .tags {
+            margin: 10px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #0f172a;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-right: 6px;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media(min-width:768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.6s;
+        }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+    </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Viraj Baxi</h1>
-  <p>Game Developer & Technical Artist</p>
-  <p>Unity • Unreal • Gameplay Systems • UI/UX • Multiplayer</p>
-  <a class="btn" href="#projects">View Projects</a>
-</header>
+    <header>
+        <h1>Viraj Baxi</h1>
+        <p>Game Developer & Technical Artist</p>
+        <p>Unity • Unreal • Gameplay Systems • UI/UX • Multiplayer</p>
+        <a class="btn" href="#projects">View Projects</a>
+    </header>
 
-<section>
-<h2>About Me</h2>
-<p>Game Developer and Technical Artist based in Toronto. I specialize in gameplay systems, UI/UX, and multiplayer experiences using Unity and Unreal Engine.</p>
-<p>With a background in graphic design and 3D art, I combine creativity with engineering to build polished, interactive experiences.</p>
-<p><strong>Always learning. Always creating.</strong></p>
-</section>
+    <section>
+        <h2>About Me</h2>
+        <p>I am a Game Developer and Technical Artist focused on building responsive gameplay systems, intuitive UI/UX, and engaging player experiences. I specialize in Unity and Unreal Engine, working across gameplay, systems design, and technical implementation.</p>
+        <p>I bring a strong balance of engineering and creativity, enabling me to collaborate effectively with designers and artists while solving real-time gameplay challenges.</p>
+        <p><strong>Focused on building systems that feel great to play.</strong></p>
+    </section>
 
-<section>
-<h2>Experience</h2>
-<div class="project"><h3>TortCo — Lead Game Developer</h3><p>Leading Unity development, improving gameplay systems, mentoring developers, and managing production workflows.</p></div>
-<div class="project"><h3>Astro Games — Developer</h3><p>Worked on Unreal gameplay systems and game jams in agile teams.</p></div>
-<div class="project"><h3>Freelance Designer</h3><p>Created branding and visuals with strong engagement.</p></div>
-</section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="grid">
+            <div class="project fade-in">
+                <video controls src="videos/submechanophobia.mp4"></video>
+                <h3>Submechanophobia</h3>
+                <div class="tags">
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Multiplayer</span>
+                    <span class="tag">UI/UX</span>
+                </div>
+                <p>Co-op horror experience with proximity voice chat, interaction systems, and multiplayer networking.</p>
+                <ul>
+                    <li>Implemented UI/UX systems and player interaction flow</li>
+                    <li>Worked on networking and gameplay systems</li>
+                    <li>Contributed to polish and immersion</li>
+                </ul>
+                <a class="btn" href="#">Play / Download</a>
+            </div>
 
-<div class="project">
-<video controls src="videos/submechanophobia.mp4"></video>
-<h3>Submechanophobia</h3>
-<p>Co-op horror game with networking, UI systems, and voice chat.</p>
-</div>
+            <div class="project fade-in">
+                <img src="images/rootprotector.jpg">
+                <h3>Root Protector</h3>
+                <div class="tags">
+                    <span class="tag">GameMaker</span>
+                    <span class="tag">2D</span>
+                    <span class="tag">Platformer</span>
+                </div>
+                <p>Game jam platformer focused on movement and responsive controls.</p>
+                <ul>
+                    <li>Implemented player movement and mechanics</li>
+                    <li>Worked on art and level design</li>
+                    <li>Optimized controls for feel and responsiveness</li>
+                </ul>
+                <a class="btn" href="#">Play / Download</a>
+            </div>
 
-<div class="project">
-<img src="images/midstone.jpg">
-<h3>Midstone Multiplayer</h3>
-<p>Focused on UI/UX, LAN networking, and multiplayer systems.</p>
-</div>
+            <div class="project fade-in">
+                <video controls src="videos/fuserunner.mp4"></video>
+                <h3>Fuse Runner</h3>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">Puzzle</span>
+                    <span class="tag">Game Jam</span>
+                </div>
+                <p>Fast-paced puzzle game centered around path planning and timing.</p>
+                <ul>
+                    <li>Built UI systems and gameplay logic</li>
+                    <li>Designed player feedback loops</li>
+                    <li>Ensured smooth pacing and interaction</li>
+                </ul>
+                <a class="btn" href="#">Play / Download</a>
+            </div>
 
-<div class="project">
-<video controls src="videos/fuserunner.mp4"></video>
-<h3>Fuse Runner</h3>
-<p>Fast-paced puzzle game with path mechanics.</p>
-</div>
+            <div class="project fade-in">
+                <video controls src="videos/tuna.mp4"></video>
+                <h3>Tuna Bubble Pop</h3>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">Arcade</span>
+                </div>
+                <p>Arcade-style reflex game with scoring systems and hazards.</p>
+                <ul>
+                    <li>Implemented gameplay mechanics and scoring</li>
+                    <li>Designed player interaction systems</li>
+                    <li>Balanced risk-reward gameplay</li>
+                </ul>
+                <a class="btn" href="#">Play / Download</a>
+            </div>
 
-<div class="project">
-<video controls src="videos/tuna.mp4"></video>
-<h3>Tuna Bubble Pop</h3>
-<p>Arcade bubble game with scoring and hazards.</p>
-</div>
+            <div class="project fade-in">
+                <video controls src="videos/friendship.mp4"></video>
+                <h3>Friendship Cure</h3>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">UI/UX</span>
+                </div>
+                <p>Arcade game focused on saving characters instead of combat.</p>
+                <ul>
+                    <li>Designed and implemented UI systems</li>
+                    <li>Created clear gameplay feedback</li>
+                    <li>Improved player flow and readability</li>
+                </ul>
+                <a class="btn" href="#">Play / Download</a>
+            </div>
 
-<div class="project">
-<video controls src="videos/friendship.mp4"></video>
-<h3>Friendship Cure</h3>
-<p>Top-down arcade game focused on UI clarity.</p>
-</div>
+        </div>
+    </section>
 
-<div class="project">
-<img src="images/rootprotector.jpg">
-<h3>Root Protector</h3>
-<p>2D platformer from a 48h game jam.</p>
-</div>
+    <section>
+        <h2>Skills</h2>
+        <p>Unity • Unreal Engine • C# • C++ • UI/UX • Multiplayer • Game Design • Optimization</p>
+    </section>
 
-<div class="project">
-<img src="images/sandwich.jpg">
-<h3>Monster Sandwich Shop</h3>
-<p>Strategy game with monster-based mechanics.</p>
-</div>
+    <section>
+        <h2>Contact</h2>
+        <p>Email: virajbaxi.vb@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/viraj-baxi-3b4286244/">LinkedIn</a></p>
+        <p><a href="https://linktr.ee/VirajBaxi">Linktree</a></p>
+    </section>
 
-</div>
-</section>
+    <footer>
+        <p>© 2026 Viraj Baxi</p>
+    </footer>
 
-<section>
-<h2>Skills</h2>
-<p>Unity • Unreal Engine • C# • C++ • UI/UX • Multiplayer • Game Design • 3D Modeling</p>
-</section>
+    <script>
+const elements = document.querySelectorAll('.fade-in');
 
-<section>
-<h2>Contact</h2>
-<p>Email: virajbaxi.vb@gmail.com</p>
-<p><a href="https://www.linkedin.com/in/viraj-baxi-3b4286244/">LinkedIn</a></p>
-<p><a href="https://linktr.ee/VirajBaxi">Linktree</a></p>
-</section>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
 
-<footer>
-<p>© 2026 Viraj Baxi</p>
-</footer>
+elements.forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
