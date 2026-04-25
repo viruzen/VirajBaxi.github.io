@@ -1,240 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viraj Baxi | Game Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraj Baxi | Game Developer</title>
 
-<style>
-:root {
-  --bg:#020617;
-  --card:#020617;
-  --border:#1e293b;
-  --text:#e5e7eb;
-  --muted:#94a3b8;
-  --accent:#38bdf8;
-}
+    <style>
+        :root {
+            --bg: #020617;
+            --card: #020617;
+            --border: #1e293b;
+            --text: #e5e7eb;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+        }
 
-body { margin:0; font-family: 'Segoe UI', sans-serif; background:var(--bg); color:var(--text); }
-header { padding:90px 20px; text-align:center; background:linear-gradient(180deg,#020617,#0f172a); }
-h1 { font-size:3rem; margin:0; }
-p { color:var(--muted); line-height:1.6; }
-section { max-width:1100px; margin:auto; padding:60px 20px; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
 
-.btn {
-  display:inline-block;
-  margin-top:10px;
-  padding:10px 16px;
-  background:var(--accent);
-  color:#020617;
-  border-radius:8px;
-  font-weight:bold;
-  text-decoration:none;
-  transition:0.25s;
-}
+        header {
+            padding: 90px 20px;
+            text-align: center;
+            background: linear-gradient(180deg,#020617,#0f172a);
+        }
 
-.btn:hover { transform:scale(1.05); opacity:0.9; }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
 
-.project {
-  background:var(--card);
-  border:1px solid var(--border);
-  padding:20px;
-  border-radius:14px;
-  transition:0.3s;
-}
+        p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
 
-.project:hover {
-  transform:translateY(-8px);
-  border-color:var(--accent);
-}
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
 
-.project img, video {
-  width:100%;
-  border-radius:10px;
-  margin-bottom:12px;
-}
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            background: var(--accent);
+            color: #020617;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.25s;
+        }
 
-.tags { margin:10px 0; }
-.tag {
-  display:inline-block;
-  background:#0f172a;
-  padding:5px 10px;
-  border-radius:6px;
-  font-size:12px;
-  margin-right:6px;
-  color:var(--accent);
-}
+            .btn:hover {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
 
-.grid { display:grid; grid-template-columns:1fr; gap:24px; }
-@media(min-width:768px){ .grid { grid-template-columns:1fr 1fr; } }
+        .project {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 14px;
+            transition: 0.3s;
+        }
 
-footer { text-align:center; padding:30px; color:#64748b; }
+            .project:hover {
+                transform: translateY(-8px);
+                border-color: var(--accent);
+            }
 
-.fade-in { opacity:0; transform:translateY(20px); transition:0.6s; }
-.fade-in.visible { opacity:1; transform:translateY(0); }
-</style>
+            .project img, video {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 12px;
+            }
+
+        .tags {
+            margin: 10px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #0f172a;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-right: 6px;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media(min-width:768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.6s;
+        }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+    </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Viraj Baxi</h1>
-  <p>Game Developer & Technical Artist</p>
-  <p>Unity • Unreal • Gameplay Systems • UI/UX • Multiplayer</p>
-  <a class="btn" href="#projects">View Projects</a>
-</header>
+    <header>
+        <h1>Viraj Baxi</h1>
+        <p>Game Developer & Technical Artist</p>
+        <p>Unity • Unreal • Gameplay Systems • UI/UX • Multiplayer</p>
+        <a class="btn" href="#projects">View Projects</a>
+    </header>
 
-<section>
-<h2>About Me</h2>
-<p>I am a Game Developer and Technical Artist focused on building responsive gameplay systems, intuitive UI/UX, and engaging player experiences. I specialize in Unity and Unreal Engine, working across gameplay, systems design, and technical implementation.</p>
-<p>I bring a strong balance of engineering and creativity, enabling me to collaborate effectively with designers and artists while solving real-time gameplay challenges.</p>
-<p><strong>Focused on building systems that feel great to play.</strong></p>
-</section>
+    <section>
+        <h2>About Me</h2>
+        <p>I am a Game Developer and Technical Artist focused on building responsive gameplay systems, intuitive UI/UX, and engaging player experiences. I specialize in Unity and Unreal Engine, working across gameplay, systems design, and technical implementation.</p>
+        <p>I bring a strong balance of engineering and creativity, enabling me to collaborate effectively with designers and artists while solving real-time gameplay challenges.</p>
+        <p><strong>Focused on building systems that feel great to play.</strong></p>
+    </section>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="grid">
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
 
-<div class="project fade-in">
-<video controls src="videos/submechanophobia.mp4"></video>
-<h3>Submechanophobia</h3>
-<div class="tags">
-<span class="tag">Unreal</span>
-<span class="tag">Multiplayer</span>
-<span class="tag">UI/UX</span>
-</div>
-<p>Co-op horror experience with proximity voice chat, interaction systems, and multiplayer networking.</p>
-<ul>
-<li>Implemented UI/UX systems and player interaction flow</li>
-<li>Worked on networking and gameplay systems</li>
-<li>Contributed to polish and immersion</li>
-</ul>
-<a class="btn" href="https://jacobdsaint.itch.io/submechanophobia">Play / Download</a>
-</div>
+            <div class="project fade-in">
+                <video controls src="videos/submechanophobia.mp4"></video>
+                <h3>Submechanophobia</h3>
+                <div class="tags">
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Multiplayer</span>
+                    <span class="tag">UI/UX</span>
+                </div>
+                <p>Co-op horror experience with proximity voice chat, interaction systems, and multiplayer networking.</p>
+                <ul>
+                    <li>Implemented UI/UX systems and player interaction flow</li>
+                    <li>Worked on networking and gameplay systems</li>
+                    <li>Contributed to polish and immersion</li>
+                </ul>
+                <a class="btn" href="https://jacobdsaint.itch.io/submechanophobia">Play / Download</a>
+            </div>
 
-<div class="project fade-in">
-<video controls src="videos/timekeepers.mp4"></video>
-<h3>Time Keepers of the Sea</h3>
-<div class="tags">
-<span class="tag">Unreal</span>
-<span class="tag">Multiplayer</span>
-<span class="tag">Networking</span>
-</div>
-<p>Multiplayer-focused midstone project developed in Unreal Engine, centered around cooperative gameplay systems and player interaction.</p>
-<ul>
-<li>Implemented UI/UX systems and player interaction workflows</li>
-<li>Developed multiplayer networking features and configured LAN server functionality</li>
-<li>Contributed to core gameplay mechanics and system design</li>
-<li>Showcased at Level Up, receiving strong feedback and engagement</li>
-</ul>
-<a class="btn" href="#">Play / Download</a>
-</div>
+            <div class="project fade-in">
+                <video controls src="videos/timekeepers.mp4"></video>
+                <h3>Time Keepers of the Sea</h3>
+                <div class="tags">
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Multiplayer</span>
+                    <span class="tag">Networking</span>
+                </div>
+                <p>Multiplayer-focused midstone project developed in Unreal Engine, centered around cooperative gameplay systems and player interaction.</p>
+                <ul>
+                    <li>Implemented UI/UX systems and player interaction workflows</li>
+                    <li>Developed multiplayer networking features and configured LAN server functionality</li>
+                    <li>Contributed to core gameplay mechanics and system design</li>
+                    <li>Showcased at Level Up, receiving strong feedback and engagement</li>
+                </ul>
+                <a class="btn" href="https://indigolunargames.itch.io/time-keepers-of-the-sea">Play / Download</a>
+            </div>
 
-<div class="project fade-in">
-<video controls src="videos/tuna.mp4"></video>
-<h3>Tuna Bubble Pop</h3>
-<div class="tags">
-<span class="tag">Unity</span>
-<span class="tag">Arcade</span>
-</div>
-<p>Arcade-style reflex game with scoring systems and hazards.</p>
-<ul>
-<li>Implemented gameplay mechanics and scoring</li>
-<li>Designed player interaction systems</li>
-<li>Balanced risk-reward gameplay</li>
-</ul>
-<a class="btn" href="https://virajbaxi.itch.io/tuna-bubblepop">Play / Download</a>
-</div>
+            <div class="project fade-in">
+                <video controls src="videos/tuna.mp4"></video>
+                <h3>Tuna Bubble Pop</h3>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">Arcade</span>
+                </div>
+                <p>Arcade-style reflex game with scoring systems and hazards.</p>
+                <ul>
+                    <li>Implemented gameplay mechanics and scoring</li>
+                    <li>Designed player interaction systems</li>
+                    <li>Balanced risk-reward gameplay</li>
+                </ul>
+                <a class="btn" href="https://virajbaxi.itch.io/tuna-bubblepop">Play / Download</a>
+            </div>
 
-<div class="project fade-in">
-<img src="images/rootprotector.jpg">
-<h3>Root Protector</h3>
-<div class="tags">
-<span class="tag">GameMaker</span>
-<span class="tag">2D</span>
-<span class="tag">Platformer</span>
-</div>
-<p>Game jam platformer focused on movement and responsive controls.</p>
-<ul>
-<li>Implemented player movement and mechanics</li>
-<li>Worked on art and level design</li>
-<li>Optimized controls for feel and responsiveness</li>
-</ul>
-<a class="btn" href="https://dracorex2002.itch.io/root-protector">Play / Download</a>
-</div>
+            <div class="project fade-in">
+                <img src="images/rootprotector.jpg">
+                <h3>Root Protector</h3>
+                <div class="tags">
+                    <span class="tag">GameMaker</span>
+                    <span class="tag">2D</span>
+                    <span class="tag">Platformer</span>
+                </div>
+                <p>Game jam platformer focused on movement and responsive controls.</p>
+                <ul>
+                    <li>Implemented player movement and mechanics</li>
+                    <li>Worked on art and level design</li>
+                    <li>Optimized controls for feel and responsiveness</li>
+                </ul>
+                <a class="btn" href="https://dracorex2002.itch.io/root-protector">Play / Download</a>
+            </div>
 
-<div class="project fade-in">
-<video controls src="videos/fuserunner.mp4"></video>
-<h3>Fuse Runner</h3>
-<div class="tags">
-<span class="tag">Unity</span>
-<span class="tag">Puzzle</span>
-<span class="tag">Game Jam</span>
-</div>
-<p>Fast-paced puzzle game centered around path planning and timing, developed during my volunteer experience at Astro Games.</p>
-<ul>
-<li>Built UI systems and gameplay logic</li>
-<li>Designed player feedback loops</li>
-<li>Ensured smooth pacing and interaction</li>
-</ul>
-<a class="btn" href="https://astrogamestudios.itch.io/fuse-runner">Play / Download</a>
-</div>
+            <div class="project fade-in">
+                <video controls src="videos/fuserunner.mp4"></video>
+                <h3>Fuse Runner</h3>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">Puzzle</span>
+                    <span class="tag">Game Jam</span>
+                </div>
+                <p>Fast-paced puzzle game centered around path planning and timing, developed during my volunteer experience at Astro Games.</p>
+                <ul>
+                    <li>Built UI systems and gameplay logic</li>
+                    <li>Designed player feedback loops</li>
+                    <li>Ensured smooth pacing and interaction</li>
+                </ul>
+                <a class="btn" href="https://astrogamestudios.itch.io/fuse-runner">Play / Download</a>
+            </div>
 
-<div class="project fade-in">
-<img src="images/sandwich.jpg">
-<h3>Summon & Serve</h3>
-<div class="tags">
-<span class="tag">Unity</span>
-<span class="tag">Strategy</span>
-<span class="tag">Game Jam</span>
-</div>
-<p>A time-management strategy game where players summon monsters to prepare dishes in a fast-paced environment.</p>
-<ul>
-<li>Implemented gameplay systems and core mechanics</li>
-<li>Developed HUD and UI systems</li>
-<li>Contributed to overall gameplay flow and interaction design</li>
-</ul>
-<a class="btn" href="#">Play / Download</a>
-</div>
+            <div class="project fade-in">
+                <img src="images/sandwich.jpg">
+                <h3>Summon & Serve</h3>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">Strategy</span>
+                    <span class="tag">Game Jam</span>
+                </div>
+                <p>A time-management strategy game where players summon monsters to prepare dishes in a fast-paced environment.</p>
+                <ul>
+                    <li>Implemented gameplay systems and core mechanics</li>
+                    <li>Developed HUD and UI systems</li>
+                    <li>Contributed to overall gameplay flow and interaction design</li>
+                </ul>
+                <a class="btn" href="https://yuri-chichichi.itch.io/summon-serve">Play / Download</a>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
 
-<section>
-<h2>Achievements & Activities</h2>
-<ul>
-<li>Selected participant in Ubisoft's Develop at Ubisoft (DAU) mentoring program, gaining industry insights and guidance from professionals (under NDA).</li>
-<li>Showcased multiplayer-focused projects at Level Up 2024 and 2025, including Time Keepers of the Sea and Submechanophobia.</li>
-<li>Actively contributed to collaborative and team-based development environments, strengthening communication and cross-disciplinary workflow skills.</li>
-<li>Participated in Humber Polytechnic’s "Designing Learning Spaces of the Future" Hackathon, contributing to a user-centered, accessible, and technology-driven concept focused on improving modern learning environments.</li>
-</ul>
-</section>
+    <section>
+        <h2>Achievements & Activities</h2>
+        <ul>
+            <li>Selected participant in Ubisoft's Develop at Ubisoft (DAU) mentoring program, gaining industry insights and guidance from professionals (under NDA).</li>
+            <li>Showcased multiplayer-focused projects at Level Up 2024 and 2025, including Time Keepers of the Sea and Submechanophobia.</li>
+            <li>Actively contributed to collaborative and team-based development environments, strengthening communication and cross-disciplinary workflow skills.</li>
+            <li>Participated in Humber Polytechnic’s "Designing Learning Spaces of the Future" Hackathon, contributing to a user-centered, accessible, and technology-driven concept focused on improving modern learning environments.</li>
+        </ul>
+    </section>
 
-<section>
-<h2>Skills</h2>
-<p>Unity • Unreal Engine • C# • C++ • UI/UX • Multiplayer • Game Design • Optimization</p>
-</section>
+    <section>
+        <h2>Skills</h2>
+        <p>Unity • Unreal Engine • C# • C++ • UI/UX • Multiplayer • Game Design • Optimization</p>
+    </section>
 
-<section>
-<h2>Contact</h2>
-<p>Email: virajbaxi.vb@gmail.com</p>
-<p><a href="https://www.linkedin.com/in/viraj-baxi-3b4286244/">LinkedIn</a></p>
-<p><a href="https://linktr.ee/VirajBaxi">Linktree</a></p>
-</section>
+    <section>
+        <h2>Contact</h2>
+        <p>Email: virajbaxi.vb@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/viraj-baxi-3b4286244/">LinkedIn</a></p>
+        <p><a href="https://linktr.ee/VirajBaxi">Linktree</a></p>
+    </section>
 
-<footer>
-<p>© 2026 Viraj Baxi</p>
-</footer>
+    <footer>
+        <p>© 2026 Viraj Baxi</p>
+    </footer>
 
-<script>
-const elements = document.querySelectorAll('.fade-in');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-});
-elements.forEach(el => observer.observe(el));
-</script>
+    <script>
+        const elements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        });
+        elements.forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
