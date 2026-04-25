@@ -54,10 +54,7 @@ section { max-width:1100px; margin:auto; padding:60px 20px; }
   margin-bottom:12px;
 }
 
-.tags {
-  margin:10px 0;
-}
-
+.tags { margin:10px 0; }
 .tag {
   display:inline-block;
   background:#0f172a;
@@ -68,28 +65,13 @@ section { max-width:1100px; margin:auto; padding:60px 20px; }
   color:var(--accent);
 }
 
-.grid {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:24px;
-}
-
-@media(min-width:768px){
-  .grid { grid-template-columns:1fr 1fr; }
-}
+.grid { display:grid; grid-template-columns:1fr; gap:24px; }
+@media(min-width:768px){ .grid { grid-template-columns:1fr 1fr; } }
 
 footer { text-align:center; padding:30px; color:#64748b; }
 
-.fade-in {
-  opacity:0;
-  transform:translateY(20px);
-  transition:0.6s;
-}
-
-.fade-in.visible {
-  opacity:1;
-  transform:translateY(0);
-}
+.fade-in { opacity:0; transform:translateY(20px); transition:0.6s; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
 </style>
 </head>
 
@@ -131,6 +113,40 @@ footer { text-align:center; padding:30px; color:#64748b; }
 </div>
 
 <div class="project fade-in">
+<video controls src="videos/timekeepers.mp4"></video>
+<h3>Time Keepers of the Sea</h3>
+<div class="tags">
+<span class="tag">Unreal</span>
+<span class="tag">Multiplayer</span>
+<span class="tag">Networking</span>
+</div>
+<p>Multiplayer-focused midstone project developed in Unreal Engine, centered around cooperative gameplay systems and player interaction.</p>
+<ul>
+<li>Implemented UI/UX systems and player interaction workflows</li>
+<li>Developed multiplayer networking features and configured LAN server functionality</li>
+<li>Contributed to core gameplay mechanics and system design</li>
+<li>Showcased at Level Up, receiving strong feedback and engagement</li>
+</ul>
+<a class="btn" href="#">Play / Download</a>
+</div>
+
+<div class="project fade-in">
+<video controls src="videos/tuna.mp4"></video>
+<h3>Tuna Bubble Pop</h3>
+<div class="tags">
+<span class="tag">Unity</span>
+<span class="tag">Arcade</span>
+</div>
+<p>Arcade-style reflex game with scoring systems and hazards.</p>
+<ul>
+<li>Implemented gameplay mechanics and scoring</li>
+<li>Designed player interaction systems</li>
+<li>Balanced risk-reward gameplay</li>
+</ul>
+<a class="btn" href="https://virajbaxi.itch.io/tuna-bubblepop">Play / Download</a>
+</div>
+
+<div class="project fade-in">
 <img src="images/rootprotector.jpg">
 <h3>Root Protector</h3>
 <div class="tags">
@@ -155,7 +171,7 @@ footer { text-align:center; padding:30px; color:#64748b; }
 <span class="tag">Puzzle</span>
 <span class="tag">Game Jam</span>
 </div>
-<p>Fast-paced puzzle game centered around path planning and timing.</p>
+<p>Fast-paced puzzle game centered around path planning and timing, developed during my volunteer experience at Astro Games.</p>
 <ul>
 <li>Built UI systems and gameplay logic</li>
 <li>Designed player feedback loops</li>
@@ -165,38 +181,33 @@ footer { text-align:center; padding:30px; color:#64748b; }
 </div>
 
 <div class="project fade-in">
-<video controls src="videos/tuna.mp4"></video>
-<h3>Tuna Bubble Pop</h3>
+<img src="images/sandwich.jpg">
+<h3>Summon & Serve</h3>
 <div class="tags">
 <span class="tag">Unity</span>
-<span class="tag">Arcade</span>
+<span class="tag">Strategy</span>
+<span class="tag">Game Jam</span>
 </div>
-<p>Arcade-style reflex game with scoring systems and hazards.</p>
+<p>A time-management strategy game where players summon monsters to prepare dishes in a fast-paced environment.</p>
 <ul>
-<li>Implemented gameplay mechanics and scoring</li>
-<li>Designed player interaction systems</li>
-<li>Balanced risk-reward gameplay</li>
-</ul>
-<a class="btn" href="https://virajbaxi.itch.io/tuna-bubblepop">Play / Download</a>
-</div>
-
-<div class="project fade-in">
-<video controls src="videos/friendship.mp4"></video>
-<h3>Friendship Cure</h3>
-<div class="tags">
-<span class="tag">Unity</span>
-<span class="tag">UI/UX</span>
-</div>
-<p>Arcade game focused on saving characters instead of combat.</p>
-<ul>
-<li>Designed and implemented UI systems</li>
-<li>Created clear gameplay feedback</li>
-<li>Improved player flow and readability</li>
+<li>Implemented gameplay systems and core mechanics</li>
+<li>Developed HUD and UI systems</li>
+<li>Contributed to overall gameplay flow and interaction design</li>
 </ul>
 <a class="btn" href="#">Play / Download</a>
 </div>
 
 </div>
+</section>
+
+<section>
+<h2>Achievements & Activities</h2>
+<ul>
+<li>Selected participant in Ubisoft's Develop at Ubisoft (DAU) mentoring program, gaining industry insights and guidance from professionals (under NDA).</li>
+<li>Showcased multiplayer-focused projects at Level Up 2024 and 2025, including Time Keepers of the Sea and Submechanophobia.</li>
+<li>Actively contributed to collaborative and team-based development environments, strengthening communication and cross-disciplinary workflow skills.</li>
+<li>Participated in Humber Polytechnic’s "Designing Learning Spaces of the Future" Hackathon, contributing to a user-centered, accessible, and technology-driven concept focused on improving modern learning environments.</li>
+</ul>
 </section>
 
 <section>
@@ -217,15 +228,11 @@ footer { text-align:center; padding:30px; color:#64748b; }
 
 <script>
 const elements = document.querySelectorAll('.fade-in');
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+    if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 });
-
 elements.forEach(el => observer.observe(el));
 </script>
 
