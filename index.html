@@ -136,6 +136,38 @@
                 height: 40px;
             }
 
+        .contact-section {
+    background: #0f172a;
+    border-radius: 16px;
+    padding: 40px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.email {
+    margin-bottom: 25px; /* spacing between email and icons */
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 18px; /* spacing between icons */
+}
+
+.socials img {
+    width: 32px;   /* smaller icons */
+    height: 32px;
+    padding: 10px;
+    background: #ffffff; /* WHITE PANEL */
+    border-radius: 12px;
+    transition: 0.25s;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+    background: #38bdf8; /* light blue on hover */
+}
+
     </style>
 </head>
 
@@ -336,9 +368,11 @@
         </p>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: virajbaxi.vb@gmail.com</p>
+   <section class="contact-section">
+    <h2>Contact</h2>
+
+    <p class="email">Email: virajbaxi.vb@gmail.com</p>
+
 
         <div class="socials">
 
